@@ -31,3 +31,14 @@ Streaming service
 DB layer
 
 •	A infra consisting of Repositories and database configurations to control and commit between multiple data sources, in this case – 2 sqlite databases.
+
+
+End points
+•	http://localhost:8080/all
+o	  Get all details from primary or any available cluster
+•	http://localhost:8080/entityemp/<empname>
+o  	Insert a new entity with name in URL
+•	http://localhost:8080/entity/<empid>
+o	  Get details of emp id in url
+•	http://localhost:8080/syncEngines
+o	  Sync all databases when LRC is enabled
