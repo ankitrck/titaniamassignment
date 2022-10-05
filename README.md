@@ -12,6 +12,10 @@ Architecture
 
 The above diagram shows the current implementation of system and its components
 
+There are multiple approaches that can be implemented to sync between Data layer and multiple data sources.
+1.	The data layer can be used to treat all data sources (databases) as independent and sync between them.
+
+
 API layer
 •	Controller with GET and POST api endpoints to connect to server and application
 Application layer
