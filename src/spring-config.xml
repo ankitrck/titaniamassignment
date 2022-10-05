@@ -1,0 +1,8 @@
+<bean id="messageListener" class="com.koshti.titaniam.queue.Subscriber" />
+
+<bean id="jmsContainer"
+      class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+<property name="connectionFactory" ref="connectionFactory"/>
+<property name="destinationName" ref="IN_QUEUE"/>
+<property name="messageListener" ref="messageListener" />
+</bean>
