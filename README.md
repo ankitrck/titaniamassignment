@@ -17,10 +17,17 @@ There are multiple approaches that can be implemented to sync between Data layer
 
 
 API layer
+
 •	Controller with GET and POST api endpoints to connect to server and application
+
 Application layer
+
 •	Services and backend structure to define endpoint interfaces.
+
 Streaming service
+
 •	To communication asynchronously and handle large requests between microservices
+
 DB layer
+
 •	A infra consisting of Repositories and database configurations to control and commit between multiple data sources, in this case – 2 sqlite databases.
